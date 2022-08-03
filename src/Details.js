@@ -1,7 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import Icon from "./Icon";
-import Temperature from "./Temperature";
+import ShowTemperature from "./ShowTemperature";
 
 export default function Details(props) {
   return (
@@ -19,7 +19,7 @@ export default function Details(props) {
           <Icon code={props.data.icon} />
         </div>
         <div className="col-4">
-          <Temperature celsius={props.data.temperature} />
+          <ShowTemperature celsius={props.data.temperature} />
         </div>
         <div className="col-4">
           <ul>
