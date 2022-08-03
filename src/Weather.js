@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
+import Details from "./Details";
 import axios from "axios";
 
 import "./Weather.css";
@@ -63,7 +63,7 @@ export default function Weather(props) {
           </button>
           <i className="fa-solid fa-location-dot currentBtn"></i>
         </form>
-        <WeatherInfo data={weatherData} />
+        <Details data={weatherData} />
       </div>
     );
   } else {
