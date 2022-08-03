@@ -16,14 +16,13 @@ export default function Details(props) {
 
       <div className="row mt-4">
         <div className="col-4">
-          <Icon code={props.data.icon} />
+          <Icon code={props.data.icon} size={100} />
         </div>
         <div className="col-4">
           <ShowTemperature celsius={props.data.temperature} />
         </div>
         <div className="col-4">
           <ul>
-            <li>Precipitation: 15%</li>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {props.data.wind} km/h</li>
           </ul>
