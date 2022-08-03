@@ -40,6 +40,11 @@
   border: 1px solid #7a757d;
 }
 
+.searchBtn ::after {
+  color: #7a757d;
+  background-color: #fff;
+}
+
 .currentBtn {
   font-size: 40px;
   color: #7a757d;
