@@ -57,11 +57,7 @@
 }
 
 .Weather .icon {
-  height: 100px;
-  width: 100px;
-  line-height: 100px;
-  margin-right: 30px;
-  display: inline-block;
+  margin-right: 50px;
 }
 
 .Weather .temperature {
