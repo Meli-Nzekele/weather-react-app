@@ -1,16 +1,33 @@
 import React from "react";
+import Weather from "./Weather";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <button className="btn btn-primary">Hello</button>
-        <header className="App-header">Weather App</header>
+        <Weather />
+        <footer className="Footer">
+          This App was built by
+          <a
+            href="https://incandescent-tapioca-00054a.netlify.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            Melissa Nzekele{" "}
+          </a>
+          and is{" "}
+          <a
+            href="https://github.com/Meli-Nzekele/weather-react-app"
+            rel="noreferrer"
+            target="_blank"
+          >
+            open-sourced on GitHub
+          </a>
+        </footer>
       </div>
     </div>
   );
 }
-
-export default App;
