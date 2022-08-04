@@ -12,8 +12,37 @@ export default function FormattedDate(props) {
     "Saturday",
   ];
 
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  let date = new Date();
+  let day = days[date.getDay()];
+  let month = months[date.getMonth()];
+  let dateNumber = date.getDate();
+  if (dateNumber === 1) {
+    dateNumber = `${dateNumber}st`;
+  } else if (dateNumber === 2) {
+    dateNumber = `${dateNumber}nd`;
+  } else if (dateNumber === 3) {
+    dateNumber = `${dateNumber}rd`;
+  } else {
+    dateNumber = `${dateNumber}th`;
+  }
+
+  let hours = date.getHours();
+
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -24,7 +53,11 @@ export default function FormattedDate(props) {
   return (
     <div>
       <span className="FormattedDate">
-        Last updated: {day} {hours}:{minutes}
+        Last Updated:{" "}
+        <em>
+          {day} {dateNumber} {month} <small>at </small>
+          {hours}:{minutes}
+        </em>
       </span>
     </div>
   );

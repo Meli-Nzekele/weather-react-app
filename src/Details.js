@@ -16,13 +16,9 @@ export default function Details(props) {
 
       <div className="row mt-4">
         <div className="col-8">
-          <div className="d-flex">
-            <div className="float-left">
-              <Icon code={props.data.icon} size={100} />
-            </div>
-            <div className="float-left">
-              <ShowTemperature celsius={props.data.temperature} />
-            </div>
+          <div className="d-flex justify-content-evenly">
+            <Icon code={props.data.icon} size={100} />
+            <ShowTemperature celsius={props.data.temperature} />
           </div>
         </div>
         <div className="col-4">
