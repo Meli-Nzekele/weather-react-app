@@ -16,15 +16,15 @@ export default function App() {
             target="_blank"
           >
             {" "}
-            Melissa Nzekele{" "}
-          </a>
-          is{" "}
+            Melissa Nzekele,
+          </a>{" "}
+          open-sourced on{" "}
           <a
             href="https://github.com/Meli-Nzekele/weather-react-app"
             rel="noreferrer"
             target="_blank"
           >
-            open-sourced on GitHub
+            GitHub
           </a>{" "}
           & Hosted on{" "}
           <a
