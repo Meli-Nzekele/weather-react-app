@@ -15,11 +15,15 @@ export default function Details(props) {
       </ul>
 
       <div className="row mt-4">
-        <div className="col-4">
-          <Icon code={props.data.icon} size={100} />
-        </div>
-        <div className="col-4">
-          <ShowTemperature celsius={props.data.temperature} />
+        <div className="col-8">
+          <div className="d-flex">
+            <div className="float-left">
+              <Icon code={props.data.icon} size={100} />
+            </div>
+            <div className="float-left">
+              <ShowTemperature celsius={props.data.temperature} />
+            </div>
+          </div>
         </div>
         <div className="col-4">
           <ul>
