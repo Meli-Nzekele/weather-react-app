@@ -4,12 +4,12 @@ import "./NextDayForecast.css";
 
 export default function NextDayForecast(props) {
   function ForecastMaxTemp() {
-    let MaxTemp = Math.round(props.data.temp.max);
+    let MaxTemp = Math.ceil(props.data.temp.max);
     return `${MaxTemp}°`;
   }
 
   function ForecastMinTemp() {
-    let MinTemp = Math.round(props.data.temp.max);
+    let MinTemp = Math.floor(props.data.temp.min);
     return `${MinTemp}°`;
   }
 

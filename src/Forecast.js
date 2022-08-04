@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
-  let [ForecastData, setForecastData] = useState(null);
+  let [forecastData, setForecastData] = useState(null);
 
   useEffect(() => {
     setLoaded(false);
@@ -20,7 +20,7 @@ export default function Forecast(props) {
     return (
       <div className="WeatherForecast mt-3">
         <div className="row">
-          {ForecastData.map(function (dailyForecast, index) {
+          {forecastData.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>

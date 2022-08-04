@@ -4,7 +4,6 @@
   padding: 20px;
   border: 3px solid #ec6e4c;
   border-radius: 10px;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.06);
 }
 
 .Weather ul {
@@ -28,19 +27,19 @@
     0px 0px 8px rgba(58, 57, 58, 0.5);
 }
 
-.searchBtn {
+.search-btn {
   color: #7a757d;
   border: 1px solid #7a757d;
   margin: 0 10px 0 10px;
 }
 
-.searchBtn:hover {
+.search-btn:hover {
   color: #ec6e4c;
   background-color: #fff;
   border: 1px solid #7a757d;
 }
 
-.searchBtn ::after {
+.search-btn ::after {
   color: #7a757d;
   background-color: #fff;
 }

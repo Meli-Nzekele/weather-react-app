@@ -18,13 +18,21 @@ export default function App() {
             {" "}
             Melissa Nzekele{" "}
           </a>
-          and is{" "}
+          is{" "}
           <a
             href="https://github.com/Meli-Nzekele/weather-react-app"
             rel="noreferrer"
             target="_blank"
           >
             open-sourced on GitHub
+          </a>{" "}
+          & Hosted on{" "}
+          <a
+            href="https://app.netlify.com/sites/wonderful-bavarois-367c41/overview"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Netlify
           </a>
         </footer>
       </div>

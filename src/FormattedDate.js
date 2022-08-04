@@ -1,7 +1,11 @@
 import React from "react";
 import "./FormattedDate.css";
 
-export default function FormattedDate(props) {
+export default function FormattedDate() {
+  function refreshPage() {
+    window.location.reload(true);
+  }
+
   let days = [
     "Sunday",
     "Monday",
@@ -30,6 +34,7 @@ export default function FormattedDate(props) {
   let date = new Date();
   let day = days[date.getDay()];
   let month = months[date.getMonth()];
+
   let dateNumber = date.getDate();
   if (dateNumber === 1) {
     dateNumber = `${dateNumber}st`;
@@ -46,18 +51,22 @@ export default function FormattedDate(props) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = props.date.getMinutes();
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return (
     <div>
       <span className="FormattedDate">
-        Last Updated:{" "}
-        <em>
-          {day} {dateNumber} {month} <small>at </small>
-          {hours}:{minutes}
-        </em>
+        Last Updated: {day} {dateNumber} {month} <small>at </small>
+        {hours}:{minutes}
+        {"  "}
+        <span className="ml-5">
+          <i
+            className="fa-solid fa-arrows-rotate refresh-icon"
+            onClick={refreshPage}
+          ></i>
+        </span>
       </span>
     </div>
   );
