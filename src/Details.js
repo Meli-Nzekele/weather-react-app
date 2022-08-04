@@ -8,10 +8,10 @@ export default function Details(props) {
     <div className="Details">
       <h1>{props.data.city}</h1>
       <ul>
+        <li className="text-capitalize">{props.data.description}</li>
         <li>
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="text-capitalize">{props.data.description}</li>
       </ul>
 
       <div className="row mt-4">
