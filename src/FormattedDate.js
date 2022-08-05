@@ -57,11 +57,12 @@ export default function FormattedDate() {
   }
   return (
     <div>
-      <span className="FormattedDate">
-        Last Updated: {day} {dateNumber} {month} <small>at </small>
+      <span className="FormattedDate mr-3">
+        Last Updated:
+        {day} {dateNumber} {month} <small>at </small>
         {hours}:{minutes}
         {"  "}
-        <span className="ml-5">
+        <span className="ml-3">
           <i
             className="fa-solid fa-arrows-rotate refresh-icon"
             onClick={refreshPage}
