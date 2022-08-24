@@ -1,26 +1,32 @@
 import React, { useState, useEffect } from "react";
 import NextDayForecast from "./NextDayForecast";
+import "./Forecast.css";
 
 import axios from "axios";
 
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
-  let [forecastData, setForecastData] = useState(null);
-
+  let [forecast, setForecast] = useState(null);
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);
 
   function handleResponse(response) {
-    setForecastData(response.data.daily);
+    setForecast(response.data.daily);
     setLoaded(true);
   }
-
+  function load() {
+    let apiKey = "4bb9d229a9e1ba598b33d76f997d3e5c";
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
   if (loaded) {
     return (
       <div className="WeatherForecast mt-3">
         <div className="row">
-          {forecastData.map(function (dailyForecast, index) {
+          {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
@@ -35,14 +41,7 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    const apiKey = `4bb9d229a9e1ba598b33d76f997d3e5c`;
-    let lat = props.coordinates.lon;
-    let lon = props.coordinates.lat;
-    let units = `metric`;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
-
-    axios.get(apiUrl).then(handleResponse);
-
+    load();
     return null;
   }
 }
