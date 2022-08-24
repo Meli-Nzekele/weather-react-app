@@ -1,3 +1,7 @@
+* {
+  cursor: default;
+}
+
 .Footer {
   font-size: 10px;
   text-align: center;
@@ -5,12 +9,12 @@
 }
 
 .Footer a {
-  color: #000;
-  font-weight: bold;
+  color: #7a757d;
   text-decoration: none;
 }
 
 .Footer a:hover {
   font-size: 10.5px;
+  font-style: italic;
   text-decoration: none;
 }

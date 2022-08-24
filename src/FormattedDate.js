@@ -59,14 +59,13 @@ export default function FormattedDate() {
     <div>
       <span className="FormattedDate mr-3">
         Last Updated:
-        {day} {dateNumber} {month} <small>at </small>
-        {hours}:{minutes}
-        {"  "}
+        <span className="p-1">
+          {day} {dateNumber} {month} <small>at </small>
+          {hours}:{minutes}
+          {"  "}
+        </span>
         <span className="ml-3">
-          <i
-            className="fa-solid fa-arrows-rotate refresh-icon"
-            onClick={refreshPage}
-          ></i>
+          <i class="fa-solid fa-arrow-rotate-right" onClick={refreshPage}></i>
         </span>
       </span>
     </div>
