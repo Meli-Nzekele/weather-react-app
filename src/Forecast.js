@@ -7,6 +7,7 @@ import axios from "axios";
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
+
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);
