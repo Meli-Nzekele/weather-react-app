@@ -2,7 +2,7 @@
 
 # SheCodes Pro Final Project 
 
-Final project created during the [SheCodes PRO workshop](https://www.shecodes.io/workshop-pro) using HTML, CSS, Javascript, React.js, [openweathermap](https://openweathermap.org/) API and hosted using Netlify. 
+Final project (1) created during the [SheCodes PRO workshop](https://www.shecodes.io/workshop-pro) using HTML, CSS, Javascript, React.js, [openweathermap](https://openweathermap.org/) API and hosted using Netlify. 
 
 This project was originally built using Vanilla Javascript during the [SheCodes Plus workshop](https://www.shecodes.io/workshop-plus) and then converted using React.js.
 
