@@ -1,4 +1,4 @@
-<img src="https://www.shecodes.io/assets/products/logos/workshop_plus-444a26c5fb7bcf6ef1a759daab7efdeaf3df51bf833d35521d5c98d12217487c.png" title="SheCodes Plus" alt="SheCodes Plus" width="200" height="50"/>&nbsp;  <img src="https://www.shecodes.io/assets/products/logos/workshop_pro-4e0fcd67234d8068f4b8cb28186c58a838d7162295f7d28abf83b778fc7b4c9f.png" title="SheCodes PRO" alt="SheCodes PRO" width="200" height="50"/>&nbsp;
+<img src="https://www.shecodes.io/assets/products/logos/workshop_pro-4e0fcd67234d8068f4b8cb28186c58a838d7162295f7d28abf83b778fc7b4c9f.png" title="SheCodes PRO" alt="SheCodes PRO" width="200" height="50"/>&nbsp;
 
 # SheCodes Pro Final Project 
 
